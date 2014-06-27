@@ -1,0 +1,27 @@
+.dropzone {
+    width: 240px;
+    height: 252px;
+    border: 4px dashed #ccc;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.dropzone span {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 18px;
+    color: #999;
+    line-height: 26px;
+}
+
+.dragOver-invalid {
+    border: 4px dashed #c00 ;
+}
+
+.dragOver-valid {
+    border: 4px dashed #0c0 ;
+}
+
+.no-pointer-events {
+    pointer-events: none;
+}

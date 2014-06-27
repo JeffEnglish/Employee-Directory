@@ -1,0 +1,17 @@
+{
+    "port": 3001,
+    "database": {
+        "db": "empdir",
+        "host": "localhost",
+        "port": 27017,
+        "collection": "sessions",
+        "autoReconnect": true
+    },
+    "sessionOptions": {
+        "secret": "osnwoi823k4n23932mk",
+        "cookie": {
+            "maxAge": 3600000
+        },
+        "name": "syncserver.sid"
+    }
+}

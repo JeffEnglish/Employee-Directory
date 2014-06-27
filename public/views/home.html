@@ -1,0 +1,38 @@
+<div class="jumbotron">
+	<div class="container">
+		<ul class="alphabet">
+			<li ng-repeat="char in alphabet">
+				<span ng-click="filterByAlphabet(char)">{{char}}</span>
+			</li>
+		</ul>
+		<ul class="genres">
+			<li ng-repeat="practice in practices">
+				<span ng-click="filterByPractice(practice)">{{practice}}</span>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="container">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			{{headingTitle}}
+			<div class="pull-right">
+				<input class="search" type="text" ng-model="query.name" placeholder="Search..."/>
+			</div>
+		</div>
+		<div class="panel-body">
+			<div class="row show-list">
+				<div class="col-xs-4 col-md-3" ng-repeat="employee in employees | filter:query | orderBy:'lastName':true">
+					<a href="/employees/{{employee._id}}">
+						<img class="img-rounded" ng-src="{{employee.photoSmall}}"/>
+					</a>
+					<div class="text-center">
+						<a href="/employees/{{employee._id}}">{{employee.name}}</a>
+						<p class="text-muted">Practice: {{employee.practice}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
