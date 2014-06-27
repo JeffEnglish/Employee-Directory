@@ -6,6 +6,9 @@ Employee-Directory
 Sample project utilizing angularJS, node.js, and mongodb. Eventually utilizing ionic framework for the
 mobile application.
 
+Based on the excellent tutorial and application created by Sahat Yalkabov:
+http://www.tweetganic.com/a/225759
+
 Setup server:
 
 	1. Install node modules
